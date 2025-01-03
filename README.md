@@ -3,35 +3,35 @@
 # Project Overview:
 This project is a simple Library Management System built using Flask, with features for managing books and members. It supports CRUD (Create, Read, Update, Delete) operations for both books and members. Additionally, it provides optional pagination, search functionality, and token-based authentication (JWT) for added security.
 
-How to Run the Project:
-Clone the Repository: Clone this repository to your local machine.
+How to Run the Project
+1. Clone the Repository
+Clone the repository to your local machine:
 
-bash
-Copy code
-git clone https://github.com/yourusername/library-management-system.git
-cd library-management-system
-Create and Activate Virtual Environment: It is recommended to use a virtual environment to manage dependencies.
+git clone https://github.com/Shubham06-op/Library-Management.git
+cd Library-Management
 
-bash
-Copy code
+2. Create and Activate Virtual Environment
+It is recommended to use a virtual environment to manage dependencies:
+
 python -m venv venv
-# On Windows:
+
+On Windows:
 venv\Scripts\activate
-# On macOS/Linux:
+
+On macOS/Linux:
 source venv/bin/activate
-Install Dependencies: Install the required packages using pip.
 
-bash
-Copy code
+3. Install Dependencies
+Install the required packages using pip:
 pip install -r requirements.txt
-Create the Database: Run the Flask application to automatically create the SQLite database (library.db).
 
-bash
-Copy code
+4. Create the Database
+Run the Flask application to automatically create the SQLite database (library.db). The application will handle creating the database upon the first run:
 python app.py
-Access the API: The application will run locally on http://127.0.0.1:5000/. You can use a tool like Postman or cURL to interact with the API.
+This will start the Flask development server, and the database file (library.db) will be created automatically if it doesn't exist.
 
-# Endpoints:
+5. Access the API
+The application will be available at http://127.0.0.1:5000/. You can interact with the API using a tool like Postman or cURL.# Endpoints:
 
 POST /auth/login: Login route to authenticate and generate JWT token.
 
